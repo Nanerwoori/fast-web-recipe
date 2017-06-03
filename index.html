@@ -2,9 +2,87 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>intro Git</title>
+    <title> parallax scrolling</title>
+    <link rel="stylesheet" href="reset.css">
+    <style media="screen">
+
+    .scene{
+        height: 100vh; /*view ppint를 100퍼센트 하겠다...*/
+
+        overflow:hidden; /* 자식노드중에 해당노드보다 큰놈이 있으면 넘치지 않고 감쳐버림*/
+        background-attachment: fixed;
+        background-size: cover;
+      }
+      .scene.one{
+        background-image: url(http://68.media.tumblr.com/be70d734e7b1ae020af44fbd852c6d4a/tumblr_oq3vapOtJF1sqk7hko1_1280.jpg);
+
+      }
+      .scene.two{
+        background-image: url(img/13126747_998968036824565_1532280157_n.jpg);
+
+      }
+      .scene.three{
+        background-image: url(img/14156207_1202291493126267_328094223_n.jpg);
+
+      }
+
+    .scene header{
+      /*border: 3px solid yellow;*/
+      max-width: 40%;
+      position: relative;
+      left:50%;
+      transform: translateX(-50%) translateY(-50%);
+      top:50%;
+      font-size: 1rem;
+      color:white;
+      text-align: center;
+      font-weight: 100;
+    }
+    header h1{
+      font-size: 1.5rem;
+      color:white;
+      margin-bottom: 1rem;
+      font-weight: 100;
+
+
+    }
+    header h1:after{
+      content:'';
+      border-bottom: solid 1px white;
+      display: block;
+      width:10rem;
+      margin: 1.5rem auto;
+
+    }
+
+
+    </style>
   </head>
   <body>
+    <section class="scene one">
+
+      <header>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      </header>
+
+    </section>
+    <section class="scene two">
+
+      <header>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      </header>
+
+    </section>
+    <section class="scene three">
+
+      <header>
+        <h1>Lorem ipsum dolor sit amet</h1>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore
+      </header>
+
+    </section>
 
   </body>
 </html>
